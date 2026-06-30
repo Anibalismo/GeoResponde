@@ -1,4 +1,4 @@
-import { NormalizedSearchResult } from '@georesponde/shared/src/types.js';
+import { NormalizedSearchResult } from '@georesponde/shared';
 
 /**
  * Searches the deeply nested object for any array named 'persons'.

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { NormalizedSearchResult } from '@georesponde/shared/src/types.js';
+import type { NormalizedSearchResult } from '@georesponde/shared';
 import { useTranslation } from 'react-i18next';
 
 export function Find() {

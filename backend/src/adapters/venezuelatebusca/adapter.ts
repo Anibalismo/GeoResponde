@@ -1,5 +1,5 @@
 import { BaseAdapter } from '../BaseAdapter.js';
-import { HumanitarianProvider, NormalizedSearchResult, SubmissionPackage } from '@georesponde/shared/src/types.js';
+import { HumanitarianProvider, NormalizedSearchResult, SubmissionPackage } from '@georesponde/shared';
 import { fetchRemixSingleFetch } from '../../transports/remix/client.js';
 import { deserializeTurboStream } from '../../transports/remix/deserializer.js';
 import { parseVenezuelaTeBuscaStructural } from './parser.js';

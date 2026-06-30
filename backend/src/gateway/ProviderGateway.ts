@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { HumanitarianProvider, NormalizedSearchResult, SubmissionPackage } from '@georesponde/shared/src/types.js';
+import { HumanitarianProvider, NormalizedSearchResult, SubmissionPackage } from '@georesponde/shared';
 import { BaseAdapter } from '../adapters/BaseAdapter.js';
 import { VenezuelaTeBuscaAdapter } from '../adapters/venezuelatebusca/adapter.js';
 

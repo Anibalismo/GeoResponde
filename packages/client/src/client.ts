@@ -1,4 +1,4 @@
-import type { CatalogData, Organization, Source, Dataset, Layer, SearchIndexEntry } from '@georesponde/catalog/src/types';
+import type { CatalogData, Organization, Source, Dataset, Layer, SearchIndexEntry } from '@georesponde/catalog';
 
 export interface ClientOptions {
   baseUrl?: string;

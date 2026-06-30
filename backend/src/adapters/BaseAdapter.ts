@@ -1,4 +1,4 @@
-import { HumanitarianProvider, NormalizedSearchResult, SubmissionPackage } from '@georesponde/shared/src/types.js';
+import { HumanitarianProvider, NormalizedSearchResult, SubmissionPackage } from '@georesponde/shared';
 
 export interface BaseAdapter {
   provider: HumanitarianProvider;

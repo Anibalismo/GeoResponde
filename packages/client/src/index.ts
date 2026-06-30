@@ -8,4 +8,4 @@ export type {
   Dataset, 
   Layer, 
   SearchIndexEntry 
-} from '@georesponde/catalog/src/types';
+} from '@georesponde/catalog';

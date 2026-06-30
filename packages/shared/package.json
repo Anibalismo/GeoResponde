@@ -9,11 +9,6 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    },
-    "./src/types.js": {
-      "import": "./dist/types.js",
-      "require": "./dist/types.js",
-      "types": "./dist/types.d.ts"
     }
   },
   "scripts": {

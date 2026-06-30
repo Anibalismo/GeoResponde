@@ -5,6 +5,8 @@ import { validateRelations } from './validators/relations';
 import { buildSearchIndex } from './indexers/search';
 import { writeJson } from './utils/fs';
 
+export * from './types';
+
 export async function validateCatalog() {
   console.log('Loading catalog data...');
   const organizations = await loadOrganizations();
