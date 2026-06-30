@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/logo.svg" alt="GeoResponde" width="180">
+  <img src="docs/GeoResponde.png" alt="GeoResponde" width="180">
 </p>
 
 <h1 align="center">
