@@ -1,27 +1,39 @@
-<p align="center">
-  <img src="docs/GeoResponde.png" alt="GeoResponde" width="180">
-</p>
+<div align="center">
+  <img src="docs/GeoResponde.png" alt="GeoResponde Logo" width="180">
 
-<h1 align="center">
-GeoResponde
-</h1>
+  <h1>GeoResponde</h1>
 
-<p align="center">
+  <p>
+    <b>Open Federated Geospatial Situation Room</b><br>
+    Connecting Scientific Intelligence with Humanitarian Response.
+  </p>
 
-<b>Open Federated Geospatial Situation Room</b>
+  <p>
+    <a href="https://www.georesponde.app"><strong>🌐 Live Demo</strong></a> &nbsp;&bull;&nbsp;
+    <a href="./docs"><strong>📚 Documentation</strong></a> &nbsp;&bull;&nbsp;
+    <a href="./CONTRIBUTING.md"><strong>🤝 Contribute</strong></a>
+  </p>
 
-Connecting Scientific Intelligence with Humanitarian Response.
+  <p>
+    <img src="https://img.shields.io/badge/version-v0.5.0--alpha-blue.svg" alt="Version">
+    <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
+  </p>
+</div>
 
-</p>
+---
 
-<p align="center">
-
-<a href="https://www.georesponde.app">🌐 Live Demo</a>
-<a href="./CONTRIBUTING.md">Contributing</a> •
-<a href="./docs">Documentation</a>
-
-</p>
-
+## Table of Contents
+* [Why GeoResponde?](#why-georesponde)
+* [What is GeoResponde?](#what-is-georesponde)
+* [Design Principles](#design-principles)
+* [Architecture](#architecture)
+* [Current Capabilities](#current-capabilities)
+* [Tech Stack](#tech-stack)
+* [Getting Started](#getting-started)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
 ---
 
 # Why GeoResponde?
@@ -32,6 +44,7 @@ When disasters strike, critical information becomes fragmented across different 
  * Governments, NGOs, volunteers, and affected families.
 
 GeoResponde exists to reconnect these pieces. Instead of creating another isolated database, we consolidate trusted information into a single operational view while respecting data ownership. Our goal is to help everyone understand a rapidly evolving situation and make better decisions in a chaotic environment.
+
 ---
 
 # What is GeoResponde?
@@ -86,20 +99,47 @@ Our monorepo is built with modern, scalable tools to ensure fast development and
 * **Backend:** Fastify and TypeScript (deployed via Railway).
 * **Tooling:** Managed as a pnpm workspace.
 
-## Getting Started
+# Getting Started
 
-To run the project locally, ensure you have `pnpm` installed, then execute:
+### Prerequisites
 
-```bash
-pnpm install
-pnpm dev
-```
+* **Node.js**: v18 or higher.
+* **pnpm**: v8 or higher.
+* **Windows Users**: Run as Administrator in PowerShell: 
+  `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 
-The application will start the following local servers:
-* **Frontend:** `http://localhost:5173`
-* **Backend (Gateway):** `http://localhost:3001`
+### Installation & Environment
 
-**Important:** To properly point the frontend to your local gateway and avoid CORS errors during development, you must configure the `VITE_API_URL` environment variable. For detailed instructions, please see our [Local Development Guide](docs/local-development.md).
+1. **Clone and Install:**
+   ```bash
+   pnpm install
+   ```
+
+2. **Approve Build Scripts (if prompted):**
+   ```bash
+   pnpm approve-builds
+   ```
+
+3. **Build Internal Packages (Required for Monorepo):**
+   ```bash
+   pnpm -r build
+   ```
+
+4. **Environment Variables:**
+   ```bash
+   cp .env.example .env
+   # Ensure VITE_API_URL is set to http://localhost:3001
+   ```
+
+5. **Start Development:**
+   ```bash
+   pnpm dev
+   ```
+
+### Troubleshooting
+
+* **"Module not found" or "ERR_MODULE_NOT_FOUND"**: Run `pnpm -r build` and try again.
+* **Permission Errors**: Verify your terminal execution policy (see Prerequisites).
 
 ---
 
@@ -115,7 +155,14 @@ Our current development priorities focus on expanding the ecosystem and standard
 
 GeoResponde welcomes contributions from everyone; whether you are a developer, scientist, emergency manager, or volunteer, your help is valuable. We deeply appreciate those who contribute their time for the greater good, whether you are a Git veteran or making your very first open-source contribution.
 
-Please read `CONTRIBUTING.md` and `docs/community/ways-to-contribute.md` before opening a Pull Request.
+### Getting Involved
+1. Please read `CONTRIBUTING.md` and `docs/community/ways-to-contribute.md` before opening a Pull Request.
+2. Review our [Code of Conduct](CODE_OF_CONDUCT.md) to understand the standards and expectations we uphold in our community.
+
+### Community and Support
+If you get stuck, find a bug, or want to propose a new feature:
+* **Issues:** Open a detailed ticket on our [GitHub Issues](#) page.
+* **Discussions:** Join the conversation in our [GitHub Discussions](#).
 
 ## Current Release: v0.5.0-alpha
 
